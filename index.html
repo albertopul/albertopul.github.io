@@ -45,7 +45,7 @@
                             <a class="btn btn-light btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
                         </div>
                 <div class="masthead-subheading">Looking for a job as Python developer</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#about">Download my resume in pdf</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#" download>Check my resume in pdf</a>
             </div>
         </header>
         <!-- About -->
@@ -247,7 +247,6 @@
             </div>
         </section>
         <!-- Team-->
-        
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -255,21 +254,28 @@
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
                 </div>
                 
-                <form
-  action="https://formspree.io/f/mleakleq"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+                <form id="contactForm" action="https://formspree.io/f/mleakleq" method="POST">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" name="_name" required />
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" name="_replyto" required />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" name="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+                </form>
             </div>
         </section>
         <!-- Footer-->
@@ -278,7 +284,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Albert Puliński 2021</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     </div>
